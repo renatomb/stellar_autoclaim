@@ -138,9 +138,8 @@ function get_page($url) {
 }
 
 function proceed_trans($account,$trusts,$claims,$myPrivateKey=null) {
-   //Path for the temporary pythin generated file below:
+   //Path for the temporary python generated file below:
    $caminho="/Users/renato/Downloads/exec_" . uniqid() . ".py";
-
    $gravar=fopen($caminho,"w+");
    fwrite($gravar,'from stellar_sdk import Server, Keypair, TransactionBuilder, Network, FeeBumpTransaction, ClaimPredicate, Claimant, Asset
 import requests
